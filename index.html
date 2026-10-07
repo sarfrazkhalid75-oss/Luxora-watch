@@ -83,7 +83,7 @@ button {
 </head>
 
 <body>
-
+<div id="login-page">
 <div class="login-box">
 
   <div class="logo">⌚ Luxora Watches</div>
@@ -94,13 +94,14 @@ button {
   <input type="text" placeholder="Username">
   <input type="password" placeholder="Password">
 
-  <button>Login</button>
+  <button onclick="showProducts()">Login</button>
   <button>Register</button>
   <button>Continue with Google</button>
 
-</div>
+ </div>
+ </div>
 
-<div class="products">
+<div class="products" id="products" style="display:none;">
 
   <div class="product">
     <img src="IMG_20261007_112648.jpg?v=2" class="watch">
