@@ -5,19 +5,103 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luxora Watches</title>
 <style>
-.product button {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #050505;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 90%;
+  max-width: 590px;
+  padding: 45px 55px;
+  background: #080808;
+  border: 2px solid #8f7420;
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 0 35px rgba(212,175,55,0.12);
+}
+
+.logo {
+  font-size: 70px;
+  font-weight: bold;
+  color: #d4af37;
+  line-height: 1.05;
+  margin-bottom: 15px;
+}
+
+.login-box > p {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.login-box h2 {
+  font-size: 48px;
+  margin-bottom: 35px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  background: white;
+  color: black;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.login-box button:first-of-type {
   background: #d4af37;
   color: black;
   border: none;
-  padding: 10px 25px;
-  border-radius: 8px;
+  font-weight: bold;
+}
+
+.login-box button:nth-of-type(2),
+.login-box button:nth-of-type(3) {
+  background: transparent;
+  color: white;
+  border: 2px solid #d4af37;
 }
 
 @media (max-width: 600px) {
-  .products {
-    grid-template-columns: 1fr;
+  .login-box {
+    width: 92%;
+    padding: 35px 28px;
   }
+
+  .logo {
+    font-size: 45px;
   }
+
+  .login-box > p {
+    font-size: 20px;
+  }
+
+  .login-box h2 {
+    font-size: 38px;
+  }
+}
 </style>
 </head>
 
